@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mohan Sai | Video Editor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #6a00ff, #a100ff);
+    box-shadow: 0 0 40px rgba(161,0,255,0.5);
+    animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* SECTION */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-left: 5px solid #a100ff;
+    padding-left: 10px;
+}
+
+/* GRID */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 20px #a100ff;
+}
+
+/* MEDIA */
+video, img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #a100ff;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6a00ff;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a0a14;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mohan Sai Murari</h1>
+    <p>🎬 Video Editor | Motion Graphics | Creative Storytelling</p>
+    <a href="#contact" class="btn">Hire Me</a>
+</header>
+
+<section>
+    <h2>🎬 My Video Projects</h2>
+    <div class="projects">
+
+        <div class="card">
+            <h3>Cinematic Edit</h3>
+            <video controls src="video1.mp4"></video>
+        </div>
+
+        <div class="card">
+            <h3>Instagram Reel</h3>
+            <video controls src="video2.mp4"></video>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>🎨 Thumbnails</h2>
+    <div class="projects">
+
+        <div class="card">
+            <img src="thumb1.png">
+        </div>
+
+        <div class="card">
+            <img src="thumb2.png">
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>📞 Contact</h2>
+    <div class="contact">
+        <p>Email: murarimohansai@gmail.com</p>
+        <p>Phone: +91 9398047692</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Mohan Sai | Portfolio</p>
+</footer>
+
+</body>
+</html>
